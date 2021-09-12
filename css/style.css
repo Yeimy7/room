@@ -68,7 +68,7 @@ p{
 .nextBack{
     grid-area: nextBack;
     display: flex;
-    background-color: white;
+    background-color: red;
 }
 .table{
     grid-area: table;

@@ -30,7 +30,7 @@
     font-family: 'SpartanA', sans-serif;
 }
 .container{
-    height: 85vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 29% 29.2% 11% 1fr;
     grid-template-rows: 57% 10% 1fr;
@@ -78,7 +78,7 @@ p{
 .about{
     grid-area: about;
     background-color: white;
-    padding: 5vw 2vw 5vw 4vw;
+    padding: 5vw 1vw 5vw 2vw;
 
 }
 h2{

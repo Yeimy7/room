@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "SpartanA";
+    src: url('../Spartan/static/Spartan-Medium.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: "SpartanB";
+    src: url('../Spartan/static/Spartan-SemiBold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: "SpartanC";
+    src: url('../Spartan/static/Spartan-Bold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --darkGray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --veryDarkGray: hsl(0, 0%, 27%);
+    font-size: 12px;
+    font-family: 'SpartanA', sans-serif;
+}
+.container{
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 29% 29.2% 11% 1fr;
+    grid-template-rows: 57% 10% 1fr;
+    grid-template-areas:"hero hero shop shop"
+                        "hero hero nextBack nextBack"
+                        "table about about chair";
+    gap:0px;   
+}
+.image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hero{
+    grid-area: hero;
+    background-image: url('../images/desktop-image-hero-1.jpg');
+
+}
+.shop{
+    grid-area: shop;
+    /* padding: 80px 60px 80px 90px; */
+    padding: 5vw 5vw 5vw 6.2vw;
+    background-color: white;
+}
+.shop h1{
+    font-family: 'SpartanC';
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin: 1.6rem 0;
+}
+p{
+    color: var(--darkGray);
+    line-height: 1.7rem;
+}
+.nextBack{
+    grid-area: nextBack;
+    display: flex;
+    background-color: white;
+}
+.table{
+    grid-area: table;
+    background-color: black;
+    background-image: url('../images/image-about-dark.jpg');
+}
+.about{
+    grid-area: about;
+    background-color: white;
+    padding: 5vw 4vw;
+
+}
+h2{
+    text-transform: uppercase;
+    font-family: 'SpartanC';
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.chair{
+    grid-area: chair;
+    background-image: url('../images/image-about-light.jpg');
+}
+
+.button{
+    background-color: var(--black);
+    width: 75px;
+    height: 100%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--veryDarkGray);
+}
+#back{
+    background-image: url('../images/icon-angle-left.svg');
+}
+#next{
+    background-image: url('../images/icon-angle-right.svg');
+}

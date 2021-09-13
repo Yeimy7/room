@@ -52,17 +52,35 @@
 .shop{
     grid-area: shop;
     background-color: white;
-    padding: 7rem 5rem 0 7rem;
+    padding: 2rem 5rem 0 7rem;
+    align-self: center;
 }
 h1{
     font-family: 'SpartanB';
-    font-size: 3.5rem;
-    letter-spacing: -1px;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
 }
 p{
     color: var(--darkGray);
     line-height: 1.7rem;
-    margin: 1rem 3rem 0 0;
+    margin: 1.5rem 3rem 1.5rem 0 ;
+}
+.shop p{
+    margin-bottom: 3rem;
+}
+.arrow{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    letter-spacing: .8rem;
+    font-family: 'SpartanB';
+}
+.arrow-icon{
+    background-image: url('../images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 10px;
+    display: inline-block;
 }
 .nextBack{
     grid-area: nextBack;
@@ -76,7 +94,8 @@ p{
 .about{
     grid-area: about;
     background-color: white;
-    padding: 5rem 0 0 2.5rem;
+    padding: 2rem 0 0 3rem;
+    align-self: center;
 
 }
 h2{

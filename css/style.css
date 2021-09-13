@@ -30,7 +30,7 @@
     font-family: 'SpartanA', sans-serif;
 }
 .container{
-    height: 80vh;
+    height: 88vh;
     display: grid;
     grid-template-columns: 29% 29.2% 11% 1fr;
     grid-template-rows: 57% 10% 1fr;
@@ -51,19 +51,18 @@
 }
 .shop{
     grid-area: shop;
-    /* padding: 80px 60px 80px 90px; */
-    padding: 5vw 5vw 5vw 6.2vw;
     background-color: white;
+    padding: 7rem 0 0 7rem;
 }
 .shop h1{
     font-family: 'SpartanC';
     font-size: 3rem;
     letter-spacing: -1px;
-    margin: 1.6rem 0;
 }
 p{
     color: var(--darkGray);
     line-height: 1.7rem;
+    margin: 1rem 3rem 0 0;
 }
 .nextBack{
     grid-area: nextBack;
@@ -78,7 +77,7 @@ p{
 .about{
     grid-area: about;
     background-color: white;
-    padding: 5vw 1vw 5vw 2vw;
+    padding: 4rem 0 0 2.5rem;
 
 }
 h2{

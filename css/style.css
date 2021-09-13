@@ -35,7 +35,7 @@
     grid-template-columns: 29% 29.2% 11% 1fr;
     grid-template-rows: 57% 10% 1fr;
     grid-template-areas:"hero hero shop shop"
-                        "hero hero nextBack nextBack"
+                        "hero hero nextBack ."
                         "table about about chair";
     gap:0px;   
 }
@@ -54,20 +54,19 @@
     background-color: white;
     padding: 7rem 0 0 7rem;
 }
-.shop h1{
-    font-family: 'SpartanC';
+h1{
+    font-family: 'SpartanB';
     font-size: 3rem;
     letter-spacing: -1px;
 }
 p{
     color: var(--darkGray);
     line-height: 1.7rem;
-    margin: 1rem 3rem 0 0;
+    margin: 3rem 4rem 0 0;
 }
 .nextBack{
     grid-area: nextBack;
     display: flex;
-    background-color: red;
 }
 .table{
     grid-area: table;
@@ -94,7 +93,7 @@ h2{
 
 .button{
     background-color: var(--black);
-    width: 75px;
+    width: 50%;
     height: 100%;
     border: none;
     background-position: center;
